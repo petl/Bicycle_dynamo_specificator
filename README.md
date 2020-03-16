@@ -13,6 +13,34 @@ Different load resistors (Rload) were connected to get the load specifications o
 
 ![Equivalent measurement schematic](https://github.com/petl/Bicycle_dynamo_specificator/blob/master/Measurement_schematic.png)
 
+## Script
+
+The [script](https://github.com/petl/Bicycle_dynamo_specificator/blob/master/GetDataFromRigol1054Z.ipynb) written in python and run in an [jupyter notebook](https://jupyter.org/) is composed of three parts:
+
+### Scope
+
+The Rigol 1054Z was used with a [library](https://pypi.org/project/ds1054z/) to wrap the SCPI commands. This enabled pulling waveform out of the scope in 3 lines possible. 
+Output:
+> Connected to:  RIGOL TECHNOLOGIES,DS1104Z,DS1ZAXXXX,00.04.04.SP3
+
+> Currently displayed channels:  ['CHAN1']
+
+> got datapoints: 1200
+
+
+### Filter & Calc
+
+We take the waveform, calculate the sample period and sample rate. This is used for the LP filtered voltage trace (wave), to get the speed of the dynamo and to calculate the output power with the known resistance. 
+Output: 
+> Wheel speed: 30.563 km/h
+
+> Average power over resistor: 6.14W
+
+### Plot
+
+A pyplot throws all the data into a plot, including the speed, resistance and powerAVG as a textbox and additionally saves the raw data as csv to be edited later. 
+
+
 
 ## Results
 To get to the results quickly, here's the power output plot with different Rload over speed:
