@@ -1,4 +1,4 @@
-# Bicycle dynamo specificator
+# Bicycle dynamo specifier
 
 This setup was built to specify the output voltage trace and power of a bicycle dynamo with different loads attached. 
 This was done to see if it is feasible to charge a phone from a bicycle at standard USB specifications (5V@500mA=2.5W) and to evaluate what circuitry options would be viable.
