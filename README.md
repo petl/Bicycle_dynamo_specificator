@@ -13,6 +13,9 @@ Different load resistors (Rload) were connected to get the load specifications o
 
 ![Equivalent measurement schematic](https://github.com/petl/Bicycle_dynamo_specificator/blob/master/Measurement_schematic.png)
 
+
+A [video](https://github.com/petl/Bicycle_dynamo_specificator/blob/master/setup_video.mp4) of the setup in action is also included in the repository.
+
 ## Script
 
 The [script](https://github.com/petl/Bicycle_dynamo_specificator/blob/master/GetDataFromRigol1054Z.ipynb) written in python and run in an [jupyter notebook](https://jupyter.org/) is composed of three parts:
